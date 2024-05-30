@@ -1,0 +1,272 @@
+:root{
+    --main-color: #010302;
+    --text-color: #fff;
+    --button-color: #9945FF;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+body{
+    font-family: 'Nunito';
+}
+
+.main{
+    background-color: var(--main-color);
+}
+
+.container{
+    color: var(--text-color);
+    padding: 20px;
+    margin-inline: auto;
+
+}
+
+.header-main{
+    text-transform: uppercase;
+    display: inline-flex;
+    gap: 12px;
+    font-size: 65px;
+    font-family: 'Oswald';
+    font-weight: 700;
+}
+
+.header-main span{
+    background: linear-gradient(to right, #1abc9c, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: right;
+    padding: 55px 160px;
+}
+
+.header h3{
+    display: inline-flex;
+    width: 185px;
+    padding: 17px 12px;
+    border: none;
+    border-radius: 14px;
+    border: #fff 1px solid;
+    justify-content: center;
+}
+
+
+
+.slider-container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project {
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 0 0 33.33%; /* Display 3 items at once */
+    box-sizing: border-box;
+    margin: 0 10px;
+    width: 500px;
+}
+
+.project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-info {
+    padding: 10px 0;
+    text-align: left;
+    display: flex;
+    font-family: 'Oswald';
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.btn-nav {
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-color);
+    color: white;
+    border: 1px var(--button-color) solid;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-nav:hover {
+    background-color: #1abc9c;
+}
+
+.navigation span {
+    margin: 0 10px;
+}
+
+.btn-view-all {
+    background-color: var(--button-color);
+    color: white;
+    border: 1px var(--button-color) solid;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+    font-family: 'Oswald';
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.btn-view-all:hover {
+    background-color: #16a085;
+}
+
+.content-slide h3{
+    font-size: 13px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: #8E8E8E;
+
+}
+.link{
+    background-color: var(--button-color);
+    color: white;
+    border: 1px var(--button-color) solid;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+    font: Oswald;
+    font-size: 15px;
+    transition: 0.2s ease;
+
+}
+
+.link:hover{
+    background: none;
+}
+
+.container-link{
+    padding-left: 25px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 150px;
+}
